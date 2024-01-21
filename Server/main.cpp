@@ -94,7 +94,7 @@ int __cdecl main(void)
 
     closesocket(ListenSocket);
 
-    FILE* file = fopen("D:\\Danilo\\FTN\\MRKiMR\\Project\\Server\\file.txt", "wb");
+    FILE* file = fopen("The\\Path\\Where\\The\\Server\\Will\\Place\\The\\Received\\File", "wb");
     size_t bytesRead = 0;
 
     while ((iResult = recv(ClientSocket, receive_buf, recvbuflen, 0))>0)
