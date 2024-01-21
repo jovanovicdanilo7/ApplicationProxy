@@ -36,12 +36,6 @@ int __cdecl main()
 
     pBuff = buffer;
 
-    // if (argc != 2)
-    // {
-    //    printf("Please enter server name or server's IP address in command arguments!\n");
-    //    return 1;
-    // }
-
     iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
     if (iResult != 0)
     {
@@ -245,7 +239,7 @@ int __cdecl main()
     {
         printf("Client is conected to server and ready to send a file!\n");
 
-        FILE* file = fopen("D:\\Danilo\\FTN\\MRKiMR\\Project\\Client\\file.txt", "rb");
+        FILE* file = fopen("The\\Path\\Of\\The\\File\\You\\Want\\To\\Send", "rb");
         size_t bytesRead = 0;
 
         if (file != NULL)
